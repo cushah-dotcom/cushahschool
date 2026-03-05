@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admissions Open 2026-2027 | C. U. Shah Sarvajanik High School</title>
+
+<style>
+
+body{
+font-family:Arial;
+margin:0;
+background:#f5f5f5;
+}
+
+header{
+background:#003366;
+color:white;
+padding:40px 20px;
+text-align:center;
+}
+
+header h1{
+margin:0;
+font-size:36px;
+}
+
+.hero{
+background:#e9f2ff;
+text-align:center;
+padding:40px 20px;
+}
+
+.hero h2{
+font-size:30px;
+color:#003366;
+}
+
+.button{
+display:inline-block;
+padding:12px 25px;
+margin:10px;
+background:#007BFF;
+color:white;
+text-decoration:none;
+border-radius:6px;
+}
+
+.whatsapp{
+background:#25D366;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:40px 20px;
+}
+
+.section-title{
+text-align:center;
+margin-bottom:30px;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:8px;
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+.facility{
+text-align:center;
+}
+
+form input, form textarea{
+width:100%;
+padding:10px;
+margin:8px 0;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+form button{
+background:#003366;
+color:white;
+padding:12px;
+border:none;
+border-radius:5px;
+cursor:pointer;
+}
+
+.map{
+margin-top:30px;
+}
+
+footer{
+background:#003366;
+color:white;
+text-align:center;
+padding:20px;
+margin-top:40px;
+}
+
+/* floating buttons */
+
+.float-whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+z-index:999;
+}
+
+.float-call{
+position:fixed;
+bottom:90px;
+right:20px;
+background:#007BFF;
+color:white;
+padding:15px;
+border-radius:50%;
+font-size:22px;
+text-decoration:none;
+z-index:999;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>C. U. Shah Sarvajanik High School</h1>
+<p>Ashok Nagar, Kandivali East, Mumbai</p>
+
+</header>
+
+<section class="hero">
+
+<h2>Admissions Open 2026 – 2027</h2>
+
+<p>SSC English Medium School | Nursery to Std. 10</p>
+
+<a href="tel:+919999999999" class="button">Call Now</a>
+
+<a href="https://wa.me/919999999999" class="button whatsapp">WhatsApp Enquiry</a>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Why Choose Our School</h2>
+
+<div class="grid">
+
+<div class="card">Experienced Teachers</div>
+
+<div class="card">Strong SSC Results</div>
+
+<div class="card">English Medium Education</div>
+
+<div class="card">Safe Learning Environment</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Classes Offered</h2>
+
+<div class="grid">
+
+<div class="card">Nursery – Sr KG</div>
+
+<div class="card">Std 1 – 4</div>
+
+<div class="card">Std 5 – 7</div>
+
+<div class="card">Std 8 – 10</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">School Facilities</h2>
+
+<div class="grid">
+
+<div class="card facility">Computer Lab</div>
+
+<div class="card facility">Science Lab</div>
+
+<div class="card facility">Library</div>
+
+<div class="card facility">Playground</div>
+
+</div>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Admission Enquiry</h2>
+
+<form onsubmit="sendToWhatsApp(); return false;">
+
+<input type="text" id="parent" placeholder="Parent Name" required>
+
+<input type="text" id="student" placeholder="Student Name" required>
+
+<input type="text" id="class" placeholder="Class Applying For">
+
+<input type="tel" id="phone" placeholder="Mobile Number" required>
+
+<textarea id="message" placeholder="Message"></textarea>
+
+<button type="submit">Send Enquiry</button>
+
+</form>
+
+</section>
+
+<section class="container">
+
+<h2 class="section-title">Visit Our School</h2>
+
+<a class="button" target="_blank"
+href="https://www.google.com/maps/dir/?api=1&destination=C.U.+Shah+Sarvajanik+High+School+Kandivali+East+Mumbai">
+Get Directions
+</a>
+
+<div class="map">
+
+<iframe
+src="https://www.google.com/maps?q=C.U.%20Shah%20Sarvajanik%20High%20School%20Kandivali%20East%20Mumbai&output=embed"
+width="100%"
+height="400"
+style="border:0;"
+loading="lazy">
+</iframe>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>© 2026 C. U. Shah Sarvajanik High School</p>
+
+</footer>
+
+<a href="https://wa.me/919999999999" class="float-whatsapp">💬</a>
+
+<a href="tel:+919999999999" class="float-call">📞</a>
+
+<script>
+
+function sendToWhatsApp(){
+
+var parent=document.getElementById("parent").value;
+var student=document.getElementById("student").value;
+var classs=document.getElementById("class").value;
+var phone=document.getElementById("phone").value;
+var message=document.getElementById("message").value;
+
+var text="Admission Enquiry:%0AParent Name: "+parent+
+"%0AStudent Name: "+student+
+"%0AClass: "+classs+
+"%0APhone: "+phone+
+"%0AMessage: "+message;
+
+window.open("https://wa.me/919999999999?text="+text);
+
+}
+
+</script>
+
+</body>
+</html>
